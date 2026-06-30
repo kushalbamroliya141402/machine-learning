@@ -5,7 +5,7 @@ ordinal_data = ['L', 'M', 'M', 'XL', 'XL']
 
 # Define the order of the categories
 ordinal_categories = ['XL', 'L', 'M']
-
+ 
 # Create a LabelEncoder object with specified order
 label_encoder = LabelEncoder()
 label_encoder.fit(ordinal_categories)
