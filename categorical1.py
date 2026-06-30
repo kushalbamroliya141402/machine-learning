@@ -4,7 +4,6 @@ import numpy as np
 df=pd.read_csv('D:/4072/ml/tempbook.csv')
 print(df)
 
-#feature mapping with numerical value
 size_mapping={'XL':3,'L':2,'M':1}
 df['size']=df['size'].map(size_mapping)
 print(df)
@@ -19,7 +18,6 @@ class_mapping={label:idx for idx, label in enumerate(np.unique(df['class']))}
 print(class_mapping)
 df['class']= df['class'].map(class_mapping)
 print(df)
-
 
 #reverse mapping of class
 inv_class_mapping={v:k for k, v in class_mapping.items()}
